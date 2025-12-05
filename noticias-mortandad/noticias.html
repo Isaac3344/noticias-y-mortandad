@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Noticias - Sitio de Práctica</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-noticias">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Noticias - Sitio de Práctica</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="mortandad.html">Mortandad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" placeholder="Buscar noticias..." aria-label="Buscar noticias">
+      <select id="categoryFilter">
+        <option value="all">Todas las categorías</option>
+        <option value="salud">Salud</option>
+        <option value="medio">Medio ambiente</option>
+        <option value="comunitario">Comunitario</option>
+        <option value="investigacion">Investigación</option>
+      </select>
+    </section>
+
+    <section id="newsList" class="news-list">
+     
+    </section>
+
+    <template id="newsCardT">
+      <article class="news-card">
+        <img class="thumb" src="assets/img/sample.png" alt="thumb">
+        <div class="news-body">
+          <h3 class="news-title"></h3>
+          <p class="meta"></p>
+          <p class="excerpt"></p>
+          <div class="tags"></div>
+        </div>
+      </article>
+    </template>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

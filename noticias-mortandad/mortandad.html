@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mortandad - Sitio de Práctica</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="page-mortandad">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Mortandad - Sitio de Práctica</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Resumen de Mortandad</h2>
+      <p>En esta sección presentamos datos de mortandad por causa en los últimos años —ejemplo de tabla y gráfico para análisis.</p>
+    </section>
+
+    <section class="chart-wrap">
+      <canvas id="mortChart" aria-label="Gráfico de mortandad" role="img"></canvas>
+    </section>
+
+    <section class="table-wrap">
+      <h3>Tabla de datos (ejemplo)</h3>
+      <table id="mortTable">
+        <thead>
+          <tr><th>Año</th><th>Causa</th><th>Casos</th></tr>
+        </thead>
+        <tbody>
+   
+        </tbody>
+      </table>
+      <button id="downloadCsv">Descargar CSV</button>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
